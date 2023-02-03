@@ -9,10 +9,14 @@
 <body>
      <?php 
 
-     echo "There was once a man named George <br>";
-     echo "He was 70 years old <br>";
-     echo "He really like the color blue  <br>";
-     echo "But he didn't like being 70 <br>";
+     $characterName = "John";
+     $characterAge = 40;
+     $characterFavColor = "green"; 
+
+     echo "There was once a man named $characterName <br>";
+     echo "He was $characterAge years old <br>";
+     echo "He really like the color $characterFavColor  <br>";
+     echo "But he didn't like being $characterAge <br>";
      ?>     
 </body>
 </html>
