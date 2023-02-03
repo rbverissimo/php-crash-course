@@ -7,16 +7,12 @@
       <title>Document</title>
 </head>
 <body>
-     <?php 
-
-     $characterName = "John";
-     $characterAge = 40;
-     $characterFavColor = "green"; 
-
-     echo "There was once a man named $characterName <br>";
-     echo "He was $characterAge years old <br>";
-     echo "He really like the color $characterFavColor  <br>";
-     echo "But he didn't like being $characterAge <br>";
-     ?>     
+     
+     <form action="site.php" method="GET">
+      Name: <input type="text" name="username">
+      <input type="submit">
+     </form>
+     <br>
+     <?php echo $_GET["username"] ?> 
 </body>
 </html>
