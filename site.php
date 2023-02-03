@@ -13,6 +13,6 @@
       <input type="submit">
      </form>
      <br>
-     <?php echo $_GET["username"] ?> 
+     <?php echo $_GET["username"]; echo "<br>"; echo $_GET["age"] ?> 
 </body>
 </html>
