@@ -8,11 +8,13 @@
 </head>
 <body>
      
-     <form action="site.php" method="GET">
+     <form action="site.php" method="POST">
       Name: <input type="text" name="username">
+      Password: <input type="password" name="password">
       <input type="submit">
+      
      </form>
      <br>
-     <?php echo $_GET["username"]; echo "<br>"; echo $_GET["age"] ?> 
+     <?php echo $_POST["username"]; echo "<br>"; echo $_POST["password"] ?> 
 </body>
 </html>
