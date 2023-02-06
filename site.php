@@ -9,12 +9,22 @@
 <body>
      
      <form action="site.php" method="POST">
-      Name: <input type="text" name="username">
-      Password: <input type="password" name="password">
-      <input type="submit">
-      
+           Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+           Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
+           Oranges <input type="checkbox" name="fruits[]" value="oragens"><br>
+           Strawberry: <input type="checkbox" name="fruits[]" value="Strawberry"><br>
+           <input type="submit">
+     
      </form>
      <br>
-     <?php echo $_POST["username"]; echo "<br>"; echo $_POST["password"] ?> 
+     <?php 
+
+      $fruits = $_POST["fruits"];
+      echo $fruits[0];
+      echo "<br>";
+      echo "Number of fruits:";
+      echo count($fruits); 
+
+     ?> 
 </body>
 </html>
