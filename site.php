@@ -14,6 +14,8 @@
             $wordCount = 890; 
       
       include "article-header.php" ?>
+
+      <?php include "useful-tools.php"; sayHi("Renato") ?>
      
      <form action="site.php" method="POST">
            Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
