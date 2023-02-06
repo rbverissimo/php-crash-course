@@ -7,6 +7,13 @@
       <title>Document</title>
 </head>
 <body>
+      <?php include "header.html" ?>
+      <?php 
+            $title = "There are no power in those points!";
+            $author = "Rajivi Ushakabi";
+            $wordCount = 890; 
+      
+      include "article-header.php" ?>
      
      <form action="site.php" method="POST">
            Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
@@ -14,10 +21,12 @@
            Oranges <input type="checkbox" name="fruits[]" value="oragens"><br>
            Strawberry: <input type="checkbox" name="fruits[]" value="Strawberry"><br>
            <input type="submit">
+      
+      <?php include "footer.html" ?>
      
      </form>
      <br>
-     <?php 
+     <?php
 
       $fruits = $_POST["fruits"];
       echo $fruits[0];
